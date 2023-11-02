@@ -13,11 +13,18 @@
 #'
 #' @examples co2 <- kaya(pop = 82.4, gdp=44, enInt=5, carbInt=0.05)
 
-kaya <- function(pop, gdp, enInt, carbInt){
+kaya <- function(pop, gdp, enInt, carbInt, output_type = "CO2"){
   if(!require("checkmate")) {
     install.packages("checkmate")
   }
   checkmate::assert(pop > 0, gdp > 0, enInt > 0, carbInt > 0, combine = "and")
   co2 = pop * gdp * enInt * carbInt
-  return(co2)
+  if(output_type == "CO2"){
+    return(co2)
+  }else if(output_type == "C"){
+    carbon = co2 / 3.67
+    return(carbon)
+  }else{
+    stop("Invalid output_type. Please choose either 'CO2' or 'C'. If you don't select an output type, this Function use CO2 per default.")
+  }
 }
