@@ -39,7 +39,6 @@ jobs:
 
       - uses: r-lib/actions/setup-r-dependencies@v2
         with:
-          path: ./Test.Package
           extra-packages: any::rcmdcheck
           needs: check
 
