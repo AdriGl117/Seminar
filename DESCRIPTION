@@ -1,16 +1,17 @@
 Package: Seminar
 Title: Implementation of the Kaya Function
 Version: 0.1
-Authors@R: 
-    person("Adrian", "Glos", "A.Glos@campus.lmu.de", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
+Authors@R:person(given = "Adrian",
+                family = "Glos",
+                role = c("cre", "aut"),
+                email = "A.Glos@campus.lmu.de")
 Description: That Package is an implementation of the Kaya Function
 License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
     license
 URL: www.wikipedia.de
+Imports:
+    testthat,
+    checkmate
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
-Imports:
-    testthat
-    checkmate
