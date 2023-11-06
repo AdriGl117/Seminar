@@ -4,12 +4,12 @@ library(testthat)
 
 #Set the Values
 pop = 82.4
-pop_neg
+pop_neg = -82.4
 gdp=44
 enInt=5
 carbInt=0.05
 
-#Unit Tests
+#Unit Test
 test_that("Test of the Function kaya", {
   #Test the normal Function
   expect_equal(kaya(pop = pop, gdp = gdp, enInt = enInt, carbInt = carbInt), 906.4)
