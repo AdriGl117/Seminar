@@ -7,8 +7,10 @@
 #' @param carbInt Carbon intensity (in tonnes CO2/Gigajoule). Carbon intensity 
 #' is the CO2 emitted for produced energy. This number depends on the energy 
 #' mix used (coal, solar, . . . ).
+#' @param output_type Decide wheter the result should be in co2("CO2") or 
+#' carbon ("C"). co2 per default
 #'
-#' @return co2: 
+#' @return co2 or carbon 
 #' @export
 #'
 #' @examples co2 <- kaya(pop = 82.4, gdp=44, enInt=5, carbInt=0.05)
