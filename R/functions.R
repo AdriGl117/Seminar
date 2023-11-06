@@ -1,5 +1,8 @@
 #' Kaya
 #'
+#'Calculated the co2 or tonnes of carbon based on the kaya function for given 
+#'pop, gdp, enInt and carbInt
+#'
 #' @param pop Population size (in millions)
 #' @param gdp GDP per capita (in 1000$/person)
 #' @param enInt Energy intensity (in Gigajoule/$1000GDP). Energy intensity is
