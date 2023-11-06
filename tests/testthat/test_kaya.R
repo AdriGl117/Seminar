@@ -1,7 +1,7 @@
 context("Tests for the kaya Function")
 
 #Load the Function
-source("Test.Package/R/functions.R")
+source("functions.R")
 
 #Test
 testthat::test_that("Test of the Function kaya", {
