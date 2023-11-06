@@ -2,9 +2,10 @@ Package: Test.Package
 Title: Implementation of the Kaya Function
 Version: 0.1
 Authors@R: 
-    person("Adrian", "Glos", , "A.Glos@campus.lmu.de", role = c("aut", "cre"),
+    person("Adrian", "Glos", "A.Glos@campus.lmu.de", role = c("aut", "cre"),
            comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: That Package is an implementation of the Kaya Function.
+Description: That Package is an implementation of the Kaya Function. More at 
+    www.wikipedia.de
 License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
     license
 Encoding: UTF-8
